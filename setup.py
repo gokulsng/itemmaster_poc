@@ -9,8 +9,8 @@ from incirco import __version__ as version
 setup(
 	name="incirco",
 	version=version,
-	description="Incirco",
-	author="Test",
+	description="test",
+	author="test",
 	author_email="test@gmail.com",
 	packages=find_packages(),
 	zip_safe=False,
