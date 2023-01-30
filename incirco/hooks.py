@@ -53,12 +53,17 @@ app_license = "MIT"
 
 # Jinja
 # ----------
-
-# add methods and filters to jinja environment
-# jinja = {
-#	"methods": "incirco.utils.jinja_methods",
-#	"filters": "incirco.utils.jinja_filters"
+# jenv = {
+#     "methods":[
+#         "get_payment:incirco.api.get_payment_order_table"
+#     ]
 # }
+# add methods and filters to jinja environment
+jinja = {
+	"methods": "incirco.api.get_payment_order_table"
+    # "incirco.utils.jinja_methods",
+#	"filters": "incirco.utils.jinja_filters"
+}
 
 # Installation
 # ------------
@@ -102,13 +107,16 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
+doc_events = {
 #	"*": {
 #		"on_update": "method",
 #		"on_cancel": "method",
 #		"on_trash": "method"
 #	}
-# }
+    "Item Master Connector": {
+        "validate":"incirco.incirco.doctype.item_master_connector.item_master_connector.make_item"
+    }
+}
 
 # Scheduled Tasks
 # ---------------

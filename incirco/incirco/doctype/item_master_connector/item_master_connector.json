@@ -1,0 +1,171 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:item_id",
+ "creation": "2023-01-07 12:16:19.511187",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1",
+  "business",
+  "main_category",
+  "column_break_4",
+  "category",
+  "subcategory",
+  "section_break_5",
+  "item_id",
+  "product_name",
+  "price",
+  "unit",
+  "column_break_10",
+  "vendor",
+  "buyer",
+  "barcode",
+  "section_break_15",
+  "invent_size_id",
+  "invent_color_id",
+  "column_break_19",
+  "invent_style_id",
+  "config_id",
+  "hsn_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "business",
+   "fieldtype": "Data",
+   "label": "BUSINESS"
+  },
+  {
+   "fieldname": "main_category",
+   "fieldtype": "Data",
+   "label": "MAINCATEGORY"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "label": "CATEGORY"
+  },
+  {
+   "fieldname": "subcategory",
+   "fieldtype": "Data",
+   "label": "SUBCATEGORY"
+  },
+  {
+   "fieldname": "item_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ITEMID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PRODUCTNAME",
+   "reqd": 1
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "PRICE"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Data",
+   "label": "UNIT"
+  },
+  {
+   "fieldname": "vendor",
+   "fieldtype": "Data",
+   "label": "Vendor"
+  },
+  {
+   "fieldname": "buyer",
+   "fieldtype": "Data",
+   "label": "BUYER"
+  },
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Barcode",
+   "label": "BARCODE"
+  },
+  {
+   "fieldname": "invent_size_id",
+   "fieldtype": "Int",
+   "label": "INVENTSIZEID"
+  },
+  {
+   "fieldname": "invent_color_id",
+   "fieldtype": "Data",
+   "label": "INVENTCOLORID"
+  },
+  {
+   "fieldname": "invent_style_id",
+   "fieldtype": "Data",
+   "label": "INVENTSTYLEID"
+  },
+  {
+   "fieldname": "config_id",
+   "fieldtype": "Data",
+   "label": "CONFIGID"
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hsn_code",
+   "fieldtype": "Data",
+   "label": "HSN CODE"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-01-09 10:37:21.588824",
+ "modified_by": "Administrator",
+ "module": "Incirco",
+ "name": "Item Master Connector",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
